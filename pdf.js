@@ -1,12 +1,17 @@
-let urlParams = new URLSearchParams(location.search);
+const querystring= window.location.search
+
+
+
+let urlParams = new URLSearchParams(querystring);
 
 const total = urlParams.get('total');
-const subtotal = urlParams.get('sub');
+document.getElementById("subtotal").innerText  = urlParams.get('sub');
 const tax = urlParams.get('tax');
 
-document.getElementById("subtotal").innerHTML = subtotal;
+// document.getElementById("subtotal").innerHTML = subtotal;
 document.getElementById("Tax").innerHTML = tax;
 document.getElementById("Total").innerHTML = total;
+
 
 function pdf(){
 

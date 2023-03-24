@@ -14,7 +14,8 @@
 </head>
 <body>
 
-    <div id="invoice">
+    <div id="invoice" style="padding: 59px;padding-top: 0;">
+        <h1 class="shadow p-3 mb-5 bg-body-tertiary rounded" style="text-align: center;">Invoice</h1>
         <table  class="table table-success table-striped-columns mt-5">
             <tbody >
                 <tr>
@@ -37,7 +38,13 @@
             </tbody>
         </table> 
     </div>
-    <button onclick="pdf()">click</button>
+
+    <div style="text-align: center;">
+
+        <button onclick="pdf()" class="btn btn-outline-success" style="margin-left: 10px;">Download Invoice</button>
+        
+    </div>
+
 
 <script src="./pdf.js"></script>
 

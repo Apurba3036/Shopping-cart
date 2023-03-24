@@ -147,7 +147,8 @@ document.getElementById('Total').innerText=totalprice;
 }
 
 function buttonClick() {
-  window.location = `./invoice.html?total=${totalprice}&tax=${taxamount}&sub=${subtotal}`
+  window.location.href = `./invoice.html?total=${totalprice}&tax=${taxamount}&sub=${subtotal}`
+  alert('Checkout Succesful')
 }
 
 
