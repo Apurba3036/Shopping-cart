@@ -12,7 +12,7 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!-- css file link -->
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- font-awesome link -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
@@ -93,7 +93,7 @@
 
                 <!-- invoice -->
      
-                <div id="invoice">
+                <form action="invoice.html" method="POST">
                     <table  class="table table-success table-striped-columns mt-5">
                         <tbody >
                             <tr>
@@ -115,15 +115,18 @@
                             </tr>
                         </tbody>
                     </table> 
-                </div> <br><br>
+                </form> <br><br>
 
 
 
+        
+                
+                <div class="button">
+                    <button onclick="handleSubmit ()" id="check-out" type="button" class="btn btn-outline-success"><a id="check" href="/invoice.html">Check out</a></button>
+                </div>
+            
 
-            <div class="button">
-                <button id="check-out" type="button" class="btn btn-outline-success"><a href="/invoice.html">check-out</a></button>
             </div>
-        </div>
     </div>
 
 
@@ -133,7 +136,7 @@
 
        <!-- js file link -->
     
-    <script src="./cart.js"></script>
+    <script src="./cart.js" type="module"></script>
 
       
 </body>

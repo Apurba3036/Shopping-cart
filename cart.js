@@ -146,6 +146,26 @@ const totalprice= subtotal + taxamount;
 
 document.getElementById('Total').innerText=totalprice;
 
+
+function handleSubmit () {
+  
+  const name = document.getElementById('subtotal').innerText;
+ 
+
+
+  localStorage.setItem("NAME", name);
+ 
+  
+ return;
 }
+
+}
+
+
+
+
+
+
+
 
 
