@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <div id="invoice">
+        <table  class="table table-success table-striped-columns mt-5">
+            <tbody >
+                <tr>
+                    <th scope="row">Subtotal:</th>
+                    
+                    <td>$<span id="Subtotal">00</span></td>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Tax:</th>
+                    <td>$<span id="Tax">00</span>(10%)</td>
+                    
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Total:</th>
+                    <td>$ <span id="Total">00</span></td>
+                    
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+    <button onclick="pdf()">click</button>
+
+<script src="./pdf.js"></script>
+
+<script src="/cart.js"></script>
+
+    
+</body>
+</html>
