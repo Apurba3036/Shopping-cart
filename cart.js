@@ -142,6 +142,8 @@ document.getElementById('Tax').innerText= taxamount;
 // calculate total price
 
 const totalprice= subtotal + taxamount;
+document.getElementById('Total').innerText=totalprice;
+
 
 }
 
