@@ -117,7 +117,7 @@ document.getElementById('btn-case-minus').addEventListener('click',function(){
 })
 
 
-
+let totalprice,taxamount,subtotal;
 
 function total (){
 // subtotal for mobile
@@ -128,23 +128,26 @@ const currentmobileprice= parseInt(currentmobilepricestr);
 const currentcasepricestr= document.getElementById('case-price').innerText;
 const currentcaseprice= parseInt(currentcasepricestr);
 
-const subtotal = currentcaseprice + currentmobileprice;
+subtotal = currentcaseprice + currentmobileprice;
 
 document.getElementById('Subtotal').innerText= subtotal;
 
 // calculate tax
 
-const taxamountstr=(subtotal* 0.01).toFixed(2);
-const taxamount= parseFloat(taxamountstr);
+taxamountstr=(subtotal* 0.01).toFixed(2);
+taxamount= parseFloat(taxamountstr);
 document.getElementById('Tax').innerText= taxamount;
 
 
 // calculate total price
 
-const totalprice= subtotal + taxamount;
+totalprice= subtotal + taxamount;
 document.getElementById('Total').innerText=totalprice;
 
+}
 
+function buttonClick() {
+  window.location = `./invoice.html?total=${totalprice}&tax=${taxamount}&sub=${subtotal}`
 }
 
 
